@@ -1,0 +1,67 @@
+body {
+    display:flex;
+    flex-direction: column;
+    margin:0px;
+
+}
+.section{
+    display:flex;
+    flex-direction: column;
+    flex:auto;
+}
+
+
+.first{
+    background-color: #1F2937;
+    color: white;
+    padding: 10px 100px 50px 100px;
+}
+
+.second{
+    align-items: center;
+}
+
+.header {
+    display:flex;
+    justify-content: flex-end;
+    gap:20px;
+    padding: 10px, 0px;
+}
+
+a{
+    color:white;
+}
+
+* { 
+    text-decoration: none; 
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    margin:10px
+}
+
+.hiking, .text{
+    width: 25%;
+    height: auto;
+}
+
+.text{
+    padding:30px;
+}
+
+.images {
+    max-width: 220px;
+    max-height: 220px;
+    border-radius: 5%;
+    border: 5px;
+    border-color: blue;
+}
+
+.info-header{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color:#1F2937;
+}
