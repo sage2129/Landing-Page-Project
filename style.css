@@ -69,6 +69,8 @@ body {
 }
 
 #third {
+    display: flex;
+    margin: 0 auto;
     background-color: #E5E7EB;
     height: 25%;
     width: 100%;
@@ -94,7 +96,7 @@ body {
     flex-direction: column;
     margin: 0 auto;
     max-width: 60%;
-    padding: 140px 0;
+    padding: 75px 0;
 }
 
 /* Anchor Styles */
