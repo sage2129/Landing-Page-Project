@@ -29,8 +29,8 @@ body {
     gap: 50px;
 }
 
-.hiking {
-    max-height:400px;
+.dynamic {
+    max-height:300px;
 
 }
 
@@ -60,6 +60,10 @@ body {
     font-size: 20px;
 }
 
+.center{
+    margin-top: 40px;
+}
+
 /* Section ID Styles */
 #first {
     background-color: #1F2937;
@@ -82,6 +86,28 @@ body {
     color: #1f2937;
 }
 
+#fourth {
+    display: flex;
+    margin: auto;
+    height: 25%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#fifth{
+    justify-content: center;
+    align-items: center;
+    background-color: #1F2937;
+    color: white;
+    padding:30px 0px;
+}
+
+#action {
+    font-size: 23px;
+    margin:0px;
+}
 
 /*Container ID Styles*/
 #one {
@@ -90,6 +116,7 @@ body {
 
 #two {
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 #three{
@@ -97,6 +124,30 @@ body {
     margin: 0 auto;
     max-width: 60%;
     padding: 75px 0;
+}
+
+#four{
+    display:flex;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 60%;
+    padding: 30px 90px;
+    background-color: #3882F6;
+    color:white;
+    border-radius: 10px;
+    text-align: left;
+}
+
+#first-button{
+    border:0px;
+}
+
+#second-button{
+    margin-left:50px;
+}
+
+#button-border{
+    border-color: white;
 }
 
 /* Anchor Styles */
@@ -112,6 +163,10 @@ button {
     width:125px;
     height:35px;
     border-radius: 10px;
-    border:0px;
     font-weight: bold;
+    cursor: pointer;
+}
+
+p{
+    margin:0px;
 }
