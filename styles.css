@@ -1,150 +1,168 @@
-/* Reset and base styles */
-body, p {
-    margin: 0;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Flex containers */
-.section {
+/*flex*/
+body, .section, .header, .right, .container, #third, #fourth, #four{
     display: flex;
+}
+
+/*flex direction*/
+body, .section, #three{
     flex-direction: column;
 }
 
-.header, .container, .right, #third, #fourth, #fifth {
-    display: flex;
+ /*0 margin*/
+ p, body{
+    margin:0px;
+}
+
+/*header*/
+.header{
+    gap: 20px;
+    padding: 25px 0;
+    justify-content: center;
+}
+
+/* 0 auto*/
+.container, #third, #three
+{
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/*class styles*/
+.right{
+    justify-content: flex-end;
+}
+
+.container{
+    gap:50px;
+}
+
+.dynamic{
+    max-width: 100%;
+    max-height: 300px;
+    flex-shrink: 1;
+}
+
+.text {
+    max-width: 350px;
+    max-height: 300px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.images {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 5%;
+    border: 2px solid blue;
+}
+
+.info {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #1F2937;
+}
+
+.image-container{
+    text-align: center;
+    font-size: 20px;
+}
+
+.center{
+    margin-top: 40px;
+}
+
+/*id styles*/
+#third, #fourth, #fifth{
     justify-content: center;
     align-items: center;
 }
 
-.header.right {
-    justify-content: flex-end;
-}
-
-.container {
-    gap: 50px;
-    margin: 0 auto;
-}
-
-/* Header and sections */
-.header {
-    gap: 20px;
+#third, #fourth{
+    height: 25%;
+    width: 100%;
 }
 
 #first {
     background-color: #1F2937;
     color: white;
-    padding: 10px 150px 50px;
+    padding: 10px 150px 50px 150px;
+    text-align: left;
 }
 
-#second .info, #third > div, #four > div, #fifth {
-    text-align: center;
+#third{
+    background-color: #e5e7eb;
     font-size: 36px;
-}
-
-#third {
-    background-color: #E5E7EB;
-    color: #1F2937;
     font-style: italic;
     font-weight: lighter;
+    color: #1F2937;
 }
 
-#fourth {
-    background-color: #3882F6;
-    color: white;
-    border-radius: 10px;
-    margin: 100px auto;
-    padding: 30px 90px;
+#fourth{
+    margin:auto;
 }
 
-#fifth {
+#fifth{
     background-color: #1F2937;
-    padding: 30px 0;
+    color:white;
+    padding:30px 0px;
 }
 
-/* Text and images */
-.text {
-    max-width: 350px;
+#action{
+    font-size: 23px;
+    margin:0px;
 }
 
-.dynamic, .images {
-    max-height: 300px;
+#one{
+    justify-content: center;
 }
 
-.dynamic {
-    width: auto; /* Adjust width as necessary */
+#two{
+    flex-wrap:wrap;
+    margin-bottom:40px;
+    justify-content: center;
 }
 
-.images {
-    width: 300px; /* Assuming you want to fix the width for images */
-    border-radius: 5%;
-    border: 2px solid blue;
+#three{
+    max-width: 60%;
+    padding: 75px 0;
 }
 
-/* Image container and buttons */
-.image-container {
-    font-size: 20px;
-    text-align: center;
+#four{
+    margin: 100px auto;
+    max-width: 60%;
+    padding: 30px 90px;
+    background-color: #3882F6;
+    color:white;
+    border-radius: 10px;
+    text-align: left;
 }
 
-.button-border, .image-container > p {
-    margin-top: 10px; /* Add spacing above buttons and image captions */
+/* Anchor Styles */
+a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Button Styles */
 button {
     background-color: #3882F6;
     color: white;
-    width: 125px;
-    height: 35px;
+    width:125px;
+    height:35px;
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-    border: none; /* Remove default border */
 }
 
-/* Centering specific elements */
-.center {
-    margin-top: 40px;
+#first-button{
+    border:0px;
 }
 
-#one, #two {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+#second-button{
+    margin-left:50px;
 }
 
-#three, #four {
-    flex-direction: column;
-    max-width: 60%;
-}
-
-/* Adjusting padding and margins */
-#one > .text {
-    padding-right: 20px; /* Add right padding to text if images are to the right */
-}
-
-#four > div {
-    margin-right: 20px; /* Add right margin to text if button is to the right */
-}
-
-#second-button {
-    margin-left: 50px;
-}
-
-/* Section specific styles */
-#action {
-    font-size: 23px;
-}
-
-#first-button, #button-border {
-    border: 0;
-}
-
-#button-border {
+#button-border{
     border-color: white;
 }
-
